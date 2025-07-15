@@ -16,3 +16,4 @@ functions:
       - httpApi: "*"
     environment:
       SECURITY: ${param:security}
+      SECURITY2: ${param:security}
