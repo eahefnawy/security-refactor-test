@@ -17,3 +17,4 @@ functions:
     environment:
       SECURITY: ${param:security}
       SECURITY2: ${param:security}
+      SECURITY3: ${param:security}
