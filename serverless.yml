@@ -18,3 +18,4 @@ functions:
       SECURITY: ${param:security}
       SECURITY2: ${param:security}
       SECURITY3: ${param:security}
+      SECURITY4: ${param:security}
