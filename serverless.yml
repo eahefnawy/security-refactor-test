@@ -1,0 +1,18 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: eslamserverless
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: security-refactor-test
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: security-refactor-test
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: "*"
+    environment:
+      SECURITY: ${param:security}
